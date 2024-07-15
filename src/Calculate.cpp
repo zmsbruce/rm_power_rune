@@ -270,6 +270,7 @@ void Calculator::fit() {
         if (m_fitData.size() > (size_t)Param::MAX_FIT_DATA_SIZE) {
             m_fitData.erase(m_fitData.begin(), m_fitData.begin() + m_fitData.size() / 2);
         }
+        std::this_thread::sleep_for(std::chrono::milliseconds(int(1e4 / Param::FPS)));
     }
 }
 
