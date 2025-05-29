@@ -1,3 +1,5 @@
+> **由于 RM2025 能量机关改动，本代码需要进行修改（装甲模块识别部分）以进行适配。**
+
 ![](./img/cover.png)
 
 <div align="center" float="left">
