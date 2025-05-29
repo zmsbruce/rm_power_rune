@@ -1,7 +1,3 @@
-> **由于 RM2025 能量机关改动，本代码需要进行修改（装甲模块识别部分）以进行适配。**
-
-![](./img/cover.png)
-
 <div align="center" float="left">
 <a href="https://www.robomaster.com/zh-CN">
 <img src="./img/RoboMaster-mecha-logo.png" width=25% />
@@ -20,9 +16,16 @@
 
 *<div align="right">by zmsbruce</div>*
 
+> **由于 RM2025 能量机关改动，本代码需要进行修改（装甲模块识别部分）以进行适配。**
+
 ### <div align="center"> 1. 简介📓 </div>
 
 该项目为 **2023 年**、传统视觉下的**能量机关的识别**与**击打位置的预测**。其接收输入为当前时间、图像以及欧拉角 roll, pitch 和 yaw，输出为 pitch 和 yaw（默认不能改变 roll）。[main.cpp](./main.cpp) 中模拟一个示例，其按照设定好的帧率（30 帧）读取 [example.mp4](./example.mp4) 视频，并将欧拉角都设为 0。可以根据与相机、电机等协议进行个性化设置，打造出适合自己步兵机器人（也可以是哨兵）的车上代码。
+
+<div align="center">
+<img src="./img/cover.png" width=50% />
+</div>
+<br>
 
 > 代码仅包括识别与坐标解算，不包括串口通信、相机驱动部分。
 
@@ -98,7 +101,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-#### <div align="center"> 3.3 运行本项目 👻  </div>
+#### <div align="center"> 3.3 运行本项目 ♿  </div>
 
 ```bash
 git clone https://github.com/zmsbruce/rm_power_rune.git
